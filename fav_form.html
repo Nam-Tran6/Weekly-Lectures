@@ -10,25 +10,6 @@
 </head>
 
 <body>
-    <header>
-        <h1> Totes important <a href="#danka">stuff</a></h1>
-        <p> Welcome to this <strong>wall of text</strong></p>
-
-        <ul>
-            <li>Wake up</li>
-            <li>Lay in bed</li>
-        </ul>
-
-        <ol>
-            <li> Number One</li>
-            <li>Number Two</li>
-                <ul>
-                    <li>Number Two Point Two</li>
-                    <li>Test</li>
-                </ul>
-        </ol>
-    </header>
-
     <nav>
         <li><a href="wk3_lecture.html">Home</a></li>
         <li><a href="link_form.html">Link</a></li>
@@ -37,18 +18,74 @@
 
     <main>
         <section id="introduction">
-            <h2>About This Form</h2>
+            <h2>About this Form</h2>
+            <p>Input here:</p>
         </section>
-    </main>
 
-    <footer>
-         <figure>
-            <img src="image/Danka.png" alt="A ping from a discord server", title="Curiosity killed the Cat", id="danka">
-            <figcaption>Discord Server</figcaption>
-            <p>Visit this <a href="https://www.wikipedia.org">website</a> for testing reasons</p>
-            <h3>Send to <a href="mailto:104555355@student.swin.edu.au">Nam</a> for additional information</h3>
-        </figure>
-    </footer>
+        <section id="form">
+            <h2> Test Test Test...</h2>
+
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+                <label for="name"> Your Legendary Name:</label>
+                <input type="text" id="name" name="name" placeholder="Username (40 Character Max)" maxlength="40" required>
+                <input type= "submit" value="Submit Your Name">
+                <br>
+
+                <label for="age"> Your Age:</label>
+                <input type="number" id="age" name="age" placeholder="Username (40 Character Max)" maxlength="40" required>
+                <input type= "submit" value="Submit Your Age">
+                <br>
+
+                <label for="colour"> Your Colour:</label>
+                <input type="color" id="colour" name="colour">
+                <input type= "submit" value="Submit Your Colour">
+                <br>
+
+                <label for="pet"> Your Favorite Pets:</label>
+                
+                <label for="dog"> Dog:
+                    <input type="checkbox" id="dog" name="pet[]" value="dog">
+                    <input type= "submit" value="Submit Your Name">
+                </label>
+
+                <label for="cat"> Cat:
+                    <input type="checkbox" id="cat" name="pet[]" value="cat">
+                    <input type= "submit" value="Submit Your Name">
+                </label>
+
+                <label for="dragon"> Dragon:
+                    <input type="checkbox" id="dragon" name="pet[]" value="dragon">
+                    <input type= "submit" value="Submit Your Name">
+                </label>
+                
+                <fieldset>
+                    <legend>Your Favorite Tutor</legend>
+                    <input type="radio" id="tutor" name="tutor" value="allTutor">
+                    <label for="tutor">Atie, Rahul, Nick, Razeen</label>
+                    <br>
+                    <input type="radio" id="other" name="tutor" value="Others" disabled>
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <label for="fav_sub">Favorite Subject</label>
+                <select name="fav_sub" id="fav_sub">
+                    <option value="COS10026">COS10026</option>
+                    <option value="WebProject">Web Project</option>
+                    <input type="submit" value="Call it"> 
+                </select>
+
+                <label for="birthday">Your Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+                <input type="submit" value="Submit your Favorite">
+
+                <label for="dayrating">How is your day?</label>
+                <input type="range" id="dayrating" name="dayrating" min="1" max="10">
+                <input type="submit" value="Submit your Favorite">
+            </form> 
+        </section>
+
+    </main>
 
     <p>&copy 2025 Nam. All Rights Reserved</p>
 </body>
